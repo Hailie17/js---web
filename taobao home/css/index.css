@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+.t-nav-cover {
+  width: 100%;
+  min-width: 1190px;
+  height: 35px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #eee;
+}
+
+.t-nav-cover .site-nav {
+  width: 1190px;
+  height: 35px;
+  margin: 0 auto;
+  background-color: #000;
+}
