@@ -3,6 +3,12 @@ body {
   background-color: #f4f4f4;
 }
 
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .layer {
   width: 100%;
   min-width: 1190px;
@@ -29,4 +35,42 @@ body {
   height: 121px;
   margin: 0 auto;
   background-color: orange;
+}
+
+.main-nav-cover .main-nav {
+  width: 1190px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: #ff5000;
+}
+
+.main-show-area {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.main-show-area .main-area {
+  float: left;
+  width: 900px;
+  height: 632px;
+}
+
+.main-show-area .main-area .main-show {
+  height: 522px;
+  background-color: pink;
+  margin-bottom: 10px;
+}
+
+.main-show-area .main-area .head-line {
+  width: 890px;
+  height: 100px;
+  margin-right: 10px;
+  background-color: green;
+}
+
+.main-show-area .funcs-area {
+  float: left;
+  width: 290px;
+  height: 632px;
+  background-color: purple;
 }
