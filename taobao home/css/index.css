@@ -57,8 +57,53 @@ body {
 
 .main-show-area .main-area .main-show {
   height: 522px;
-  background-color: pink;
   margin-bottom: 10px;
+}
+
+.main-show-area .main-area .main-show .nav-menu-list {
+  float: left;
+  width: 190px;
+  height: 100%;
+  background-color: blue;
+}
+
+.main-show-area .main-area .main-show .sliders-wrap {
+  float: left;
+  width: 520px;
+  height: 512px;
+  margin: 10px 0 0 10px;  
+}
+
+.main-show-area .main-area .main-show .sliders-wrap .main-slider {
+  height: 280px;
+  background-color: pink;
+}
+
+.main-show-area .main-area .main-show .sliders-wrap .goods-slider {
+  height: 230px;
+  background-color: #ff5000;
+}
+
+.main-show-area .main-area .main-show .sliders-wrap .goods-slider .goods-slider-hd {
+  height: 18px;
+  padding-top: 10px;
+}
+
+.main-show-area .main-area .main-show .hot-sale-imgs {
+  float: left;
+  width: 160px;
+  height: 512px;
+  margin: 10px 10px 0;
+}
+
+.main-show-area .main-area .main-show .hot-sale-imgs .t-img {
+  height: 280px;
+  background-color: green;
+}
+
+.main-show-area .main-area .main-show .hot-sale-imgs .b-img {
+  height: 230px;
+  background-color: yellowgreen;
 }
 
 .main-show-area .main-area .head-line {
