@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;  /*字体抗锯齿*/
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+input, button {
+  border: none;
+  outline: none;
+}
+
+.layer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
