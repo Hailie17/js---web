@@ -1,0 +1,36 @@
+.header-cover {
+  width: 100%;
+  min-width: 1190px;
+  height: 121px;
+  background-color: #fff;
+}
+
+.header-bd {
+  height: 100%;
+  padding-top: 24px;
+}
+
+.header-bd .header-wrap {
+  height: 100%;
+}
+
+.header-bd .header-wrap .header-logo {
+  float: left;
+  width: 190px;
+  height: 80px;
+}
+
+.header-bd .header-wrap .header-logo h1 {
+  height: 58px;
+  margin-top: 8px;
+}
+
+.header-bd .header-wrap .header-logo h1 .logo-bd {
+  display: block;
+  width: 142px;
+  height: 0;
+  margin: 0 auto;
+  padding-top: 58px;
+  background: url(../img/logo.png) no-repeat 0 0/142px 58px;
+  overflow: hidden;
+}
