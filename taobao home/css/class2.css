@@ -82,11 +82,38 @@
 }
 
 .header-bd .header-wrap .header-search .search-panel .input-wrap {
+  position: relative;
   width: 556px;
   height: 40px;
   border: 2px solid #ff5000;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+.header-bd .header-wrap .header-search .search-panel .input-wrap .fa {
+  position: absolute;
+  font-size: 20px;
+}
+
+.header-bd .header-wrap .header-search .search-panel .input-wrap .fa.fa-search {
+  top: 7px;
+  left: 10px;
+  color: #666;
+}
+
+.header-bd .header-wrap .header-search .search-panel .input-wrap .fa.fa-camera {
+  top: 8px;
+  right: 10px;
+  color: #999;
+}
+
+.header-bd .header-wrap .header-search .search-panel .input-wrap .search-input {
+  width: 472px;
+  height: 36px;
+  padding: 6px 0;
+  box-sizing: border-box;
+  text-indent: 40px;
 }
 
 .header-bd .header-wrap .header-search .search-panel .button-wrap {
