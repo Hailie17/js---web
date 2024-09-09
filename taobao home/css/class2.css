@@ -12,6 +12,7 @@
 }
 
 .header-bd .header-wrap {
+  position: relative;
   height: 100%;
 }
 
@@ -154,4 +155,29 @@
 .header-bd .header-wrap .header-search .search-ft .ft-link.fr {
   float: right;
   margin-top: 2px;
+}
+
+/* header end */
+.header-bd .header-wrap .header-qr {
+  position: absolute;
+  top: 0;
+  right: 110px;
+  width: 76px;
+  height: 90px;
+  border: 1px solid #eee;
+}
+
+.header-bd .header-wrap .header-qr .qr-bd span{
+  display: block;
+  width: 100%;
+  color: #ff5000;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.header-bd .header-wrap .header-qr .qr-bd img {
+  width: 62px;
+  height: 62px;
+  margin-left: 6px;
 }
