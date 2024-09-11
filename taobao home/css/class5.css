@@ -5,6 +5,11 @@
   background-color: #eee;
 }
 
+.main-show .main-show-wrap .main-show-t .sliders .main-slider:hover .dir-icon {
+  display: block;
+}
+
+/* slider 页码 */
 .main-show .main-show-wrap .main-show-t .sliders .main-slider .indicator {
   position: absolute;
   bottom: 15px;
@@ -49,6 +54,7 @@
 
 .main-show .main-show-wrap .main-show-t .sliders .dir-icon {
   position: absolute;
+  display: none;
   top: 50%;
   width: 20px;
   height: 30px;
