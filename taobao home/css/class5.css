@@ -1,0 +1,47 @@
+.main-show .main-show-wrap .main-show-t .sliders .main-slider {
+  position: relative;
+  width: 520px;
+  height: 280px;
+  background-color: #eee;
+}
+
+.main-show .main-show-wrap .main-show-t .sliders .main-slider .main-slider-list {
+  height: 280px;
+}
+
+.main-show .main-show-wrap .main-show-t .sliders .main-slider .main-slider-list .main-slider-item {
+  height: 280px;
+}
+
+.main-show .main-show-wrap .main-show-t .sliders .goods-slider {
+  position: relative;
+  width: 520px;
+  height: 230px;
+  background-color: #ddd;
+}
+
+.main-show .main-show-wrap .main-show-t .sliders .dir-icon {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 30px;
+  margin-top: -15px;
+  background-color: rgba(0, 0, 0, .4);
+  line-height: 28px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.main-show .main-show-wrap .main-show-t .sliders .dir-icon.dir-forward{
+  right: 0;
+  text-indent: 4px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.main-show .main-show-wrap .main-show-t .sliders .dir-icon.dir-backward{
+  left: 0;
+  text-indent: 1px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
