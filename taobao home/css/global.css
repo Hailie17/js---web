@@ -23,6 +23,10 @@ h1, h2 {
   margin: 0;
 }
 
+em,i {
+  font-style: normal;
+}
+
 input, button {
   border: none;
   outline: none;
