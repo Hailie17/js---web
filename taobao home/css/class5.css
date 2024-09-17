@@ -52,6 +52,18 @@
   background-color: #ddd;
 }
 
+.goods-slider-hd {
+  height: 32px;
+  padding-top: 11px;
+}
+
+.goods-slider-hd .hd-img {
+  display: inline-block;
+  width: 136px;
+  height: 19px;
+  background: url(../img/wangwang.png) no-repeat 0 0/136px 19px;
+}
+
 .main-show .main-show-wrap .main-show-t .sliders .dir-icon {
   position: absolute;
   display: none;
