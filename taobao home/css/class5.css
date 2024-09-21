@@ -64,9 +64,12 @@
   background: url(../img/wangwang.png) no-repeat 0 0/136px 19px;
 }
 
-.goods-slider-hd .hd-img em {
+.goods-slider-hd em {
+  position: relative;
+  top: -2px;
   font-size: 12px;
   color: #666;
+  margin-left: 136px;
 }
 
 .main-show .main-show-wrap .main-show-t .sliders .dir-icon {
