@@ -81,6 +81,24 @@
   margin-left: 136px;
 }
 
+.indicator-list {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+}
+
+.indicator-item {
+  float: left;
+  width: 16.66%;
+  height: 3px;
+  background-color: #ff1648;
+}
+
+.indicator-item.selected {
+  background-color: #575453;
+}
+
 .main-show .main-show-wrap .main-show-t .sliders .dir-icon {
   position: absolute;
   display: none;
