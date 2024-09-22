@@ -100,6 +100,11 @@
   background-color: #575453;
 }
 
+.goods-slider-wrap {
+  position: relative;
+  height: 201px;
+}
+
 .main-show .main-show-wrap .main-show-t .sliders .dir-icon {
   position: absolute;
   display: none;
