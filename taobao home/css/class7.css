@@ -1,0 +1,13 @@
+.main-show .main-show-b h3{
+  float: left;
+  width: 180px;
+  height: 73px;
+}
+
+.main-show .main-show-b h3 .headline-log {
+  width: 129px;
+  height: 0;
+  padding-top: 26px;
+  background: url(../img/headline.png) no-repeat 0 0/129px 26px;
+  overflow: hidden;
+}

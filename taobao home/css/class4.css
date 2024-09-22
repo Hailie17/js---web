@@ -84,5 +84,6 @@
   width: 890px;
   height: 100px;
   margin-right: 10px;
-  background-color: #ddd;
+  padding: 14px 14px 12px 20px;
+  background-color: #fff;
 }
