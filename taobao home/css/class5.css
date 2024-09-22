@@ -105,6 +105,14 @@
   height: 201px;
 }
 
+.goods-slider-list {
+  height: 100%;
+}
+
+.goods-slider-item {
+  height: 100%;
+}
+
 .main-show .main-show-wrap .main-show-t .sliders .dir-icon {
   position: absolute;
   display: none;
