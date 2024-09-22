@@ -87,6 +87,7 @@
   top: 30px;
   left: 0;
   width: 100%;
+  background-color: #ff1648;
 }
 
 .indicator-item {
@@ -119,13 +120,14 @@
   float: left;
   width: 347px;
   height: 201px;
-  border-left: 1px solid #ddd;
 }
 
 .goods-slider-item .item-r  .item-r-img {
   float: left;
   width: 50%;
   height: 50%;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
 }
 
 .main-show .main-show-wrap .main-show-t .sliders .dir-icon {
