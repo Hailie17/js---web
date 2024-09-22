@@ -105,12 +105,27 @@
   height: 201px;
 }
 
-.goods-slider-list {
-  height: 100%;
+.goods-slider-item .item-l {
+  float: left;
+  width: 173px;
+  height: 201px;
 }
 
-.goods-slider-item {
-  height: 100%;
+.goods-slider-item img {
+  width: 100%;
+}
+
+.goods-slider-item .item-r {
+  float: left;
+  width: 347px;
+  height: 201px;
+  border-left: 1px solid #ddd;
+}
+
+.goods-slider-item .item-r  .item-r-img {
+  float: left;
+  width: 50%;
+  height: 50%;
 }
 
 .main-show .main-show-wrap .main-show-t .sliders .dir-icon {
