@@ -11,3 +11,9 @@
   background: url(../img/headline.png) no-repeat 0 0/129px 26px;
   overflow: hidden;
 }
+
+.main-show .main-show-b h3 .sub-title {
+  font-size: 12px;
+  line-height: 24px;
+  color: #999;
+}
