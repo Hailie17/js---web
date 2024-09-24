@@ -19,14 +19,52 @@
 }
 
 .main-show .main-show-b .headline-bd {
+  position: relative;
   float: left;
   width: 676px;
   height: 73px;
   border: 1px solid #000;
 }
 
+.main-show .main-show-b .headline-bd .headline-link:hover h4 {
+  color: #ff5000;
+}
+
+.main-show .main-show-b .headline-bd .headline-link:hover img {
+  opacity: .8;
+}
+
 .main-show .main-show-b .headline-bd img {
   float: left; /*文字环绕图片*/
   width: 130px;
   height: 73px;
+  margin-right: 14px;
+}
+
+.main-show .main-show-b .headline-bd h4 {
+  margin-top: 2px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #333;
+}
+
+.main-show .main-show-b .headline-bd p {
+  height: 36px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #999;
+  overflow: hidden;
+}
+
+.main-show .main-show-b .headline-bd .headline-more {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 12px;
+  color: #999;
+  z-index: 1;
+}
+
+.main-show .main-show-b .headline-bd .headline-more:hover {
+  color: #ff5000;
 }
