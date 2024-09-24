@@ -17,3 +17,16 @@
   line-height: 24px;
   color: #999;
 }
+
+.main-show .main-show-b .headline-bd {
+  float: left;
+  width: 676px;
+  height: 73px;
+  border: 1px solid #000;
+}
+
+.main-show .main-show-b .headline-bd img {
+  float: left; /*文字环绕图片*/
+  width: 130px;
+  height: 73px;
+}
