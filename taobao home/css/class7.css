@@ -130,3 +130,9 @@
 .member-wrap .member-bd .tb-icon.icon-club {
   background-position: 0 -528px;
 }
+
+.member-wrap .member-bd .member-event {
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+}
