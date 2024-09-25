@@ -68,3 +68,17 @@
 .main-show .main-show-b .headline-bd .headline-more:hover {
   color: #ff5000;
 }
+
+.main-show .tb-member {
+  width: 290px;
+  height: 145px;
+  background: url(../img/user-bg.png) no-repeat 0 0/290px 145px;
+}
+
+.funcs-wrap {
+  float: left;
+  width: 290px;
+  height: 100%;
+  margin-top: 10px;
+  margin-top: 10px;
+}
