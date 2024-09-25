@@ -82,3 +82,36 @@
   margin-top: 10px;
   margin-top: 10px;
 }
+
+.member-wrap {
+  height: 100%;
+  padding: 3px 0 10px 0;
+}
+
+.member-wrap .member-bd {
+  height: 91px;
+}
+
+.member-wrap .member-bd .member-avatar {
+  width: 74px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.member-wrap .member-bd .member-avatar .user-link img{
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: url(../img/user.jpg) no-repeat 0 0/50px 50px;
+}
+
+.member-wrap .member-bd .member-nick {
+  display: block;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  font-size: 12px;
+}
