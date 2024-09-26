@@ -178,3 +178,25 @@
 .member-wrap .member-ft .tb-btn.btn-reg {
   width: 75px;
 }
+
+.main-show .tb-tip {
+  width: 290px;
+  height: 26px;
+}
+
+.main-show .tb-tip a {
+  display: block;
+  position: relative;
+  height: 100%;
+  padding-left: 82px;
+  background-color: #ffe4dd;
+  color: #f40;
+  line-height: 26px;
+  font-size: 12px;
+}
+
+.main-show .tb-tip a .fa {
+  position: absolute;
+  top: 8px;
+  right: 52px;
+}
