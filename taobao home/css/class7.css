@@ -200,3 +200,37 @@
   top: 8px;
   right: 52px;
 }
+
+.main-show .tab-notice {
+  height: 108px;
+  padding-top: 10px;
+  background-color: #fff;
+}
+
+.main-show .tab-notice .notice-tab-list {
+  width: 292px;
+  height: 24px;
+  margin: 4px -2px 0 0;
+  padding: 0 9px;
+}
+
+.main-show .tab-notice .notice-tab-list .tab-item {
+  float: left;
+  width: 32px;
+  height: 22px;
+  margin: 0 11px;
+  border-bottom: 2px solid transparent;
+}
+
+.main-show .tab-notice .notice-tab-list .tab-item a {
+  color: #3c3c3c;
+}
+
+.main-show .tab-notice .notice-tab-list .tab-item a:hover {
+  color: #ff5000;
+}
+
+.main-show .tab-notice .notice-tab-list .tab-item.active a {
+  border-bottom: 2px solid #ff5000;
+  font-weight: bold;
+}
