@@ -220,6 +220,9 @@
   height: 22px;
   margin: 0 11px;
   border-bottom: 2px solid transparent;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
 }
 
 .main-show .tab-notice .notice-tab-list .tab-item a {
@@ -230,7 +233,32 @@
   color: #ff5000;
 }
 
-.main-show .tab-notice .notice-tab-list .tab-item.active a {
+.main-show .tab-notice .notice-tab-list .tab-item.active {
   border-bottom: 2px solid #ff5000;
+}
+
+.main-show .tab-notice .notice-tab-list .tab-item.active a {
   font-weight: bold;
+}
+
+
+.main-show .tab-notice .tb-notice-bd {
+  height: 65px;
+  padding: 0 12px;
+}
+
+.main-show .tab-notice .tb-notice-bd .notice-list {
+  height: 65px;
+  padding: 9px 0 6px;
+}
+
+.main-show .tab-notice .tb-notice-bd .notice-list .notice-item {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 8px;
+}
+
+.main-show .tab-notice .tb-notice-bd .notice-list .notice-item a {
+  font-size: 12px;
 }
