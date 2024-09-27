@@ -262,3 +262,11 @@
 .main-show .tab-notice .tb-notice-bd .notice-list .notice-item a {
   font-size: 12px;
 }
+
+.main-show .tab-notice .tb-notice-bd .notice-list .notice-item a:hover {
+  color: #f40;
+}
+
+.main-show .tab-notice .tb-notice-bd .notice-list .notice-item a.hl {
+  color: #f40;
+}
