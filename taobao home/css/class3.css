@@ -69,7 +69,10 @@
 }
 
 .funcs-icon {
-
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/icons_sprites.png) no-repeat 0 0/24px 597px;
 }
 
 .funcs-icon.icon-fhf{
