@@ -67,3 +67,23 @@
   line-height: 30px;
   font-size: 14px;
 }
+
+.funcs-icon {
+
+}
+
+.funcs-icon.icon-fhf{
+  background-position: 0 0;
+}
+
+.funcs-icon.icon-lx{
+  background-position: 0 -85px;
+}
+
+.funcs-icon.icon-cx{
+  background-position: 0 -44px;
+}
+
+.funcs-icon.icon-yx{
+  background-position: 0 -132px;
+}
