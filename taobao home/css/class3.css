@@ -179,6 +179,11 @@
 .main-show .tb-apps .tb-apps-wrap .apps-list .app-item .app-qr {
   display: none;
   position: absolute;
+  top: -112px;
+  width: 90px;
+  height: 102px;
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
 
 .main-show .tb-apps .tb-apps-wrap .apps-list .app-item .app-qr .qr-wrap {
