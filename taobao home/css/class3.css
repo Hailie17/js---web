@@ -180,3 +180,13 @@
   display: none;
   position: absolute;
 }
+
+.main-show .tb-apps .tb-apps-wrap .apps-list .app-item .app-qr .qr-wrap {
+  width: 90px;
+  height: 90px;
+  padding: 12px;
+}
+
+.main-show .tb-apps .tb-apps-wrap .apps-list .app-item .app-qr .qr-wrap img {
+  width: 100%;
+}
