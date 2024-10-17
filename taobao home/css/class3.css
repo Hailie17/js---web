@@ -160,6 +160,10 @@
   font-weight: normal;
 }
 
+.main-show .tb-apps .tb-apps-wrap h3 a:hover {
+  color: #f40;
+}
+
 .main-show .tb-apps .tb-apps-wrap .apps-list {
   padding-left: 23px;
 }
