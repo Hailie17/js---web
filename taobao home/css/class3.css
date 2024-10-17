@@ -211,3 +211,37 @@
   font-size: 12px;
   color: #999;
 }
+
+.life-study {
+  height: 166px;
+  margin-top: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.life-study .life-study-title {
+  height: 24px;
+  margin: 19px 0 20px;
+  padding-left: 20px;
+}
+
+.life-study .life-study-title .title-img {
+  display: inline-block;
+  height: 0;
+  width: 95px;
+  padding-top: 24px;
+  background: url(../img/life_study/title.png) no-repeat 0 0/90px 90px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.life-study .life-study-title .sub-title {
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+  line-height: 24px;
+}
+
+.life-study .goods-list {
+  padding-left: 20px;
+}
