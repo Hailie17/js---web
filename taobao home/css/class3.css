@@ -245,3 +245,32 @@
 .life-study .goods-list {
   padding-left: 20px;
 }
+
+.life-study .goods-list .goods-item {
+  float: left;
+  width: 194px;
+  height: 82px;
+}
+
+.life-study .goods-list .goods-item .goods-img {
+  float: left;
+  width: 82px;
+  height: 82px;
+  padding: 7px;
+  border: 1px solid #13d0a1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.life-study .goods-list .goods-item .goods-img img {
+  width: 100%;
+}
+
+.life-study .goods-list .goods-item .goods-info {
+  float: left;
+  height: 82px;
+}
+
+.life-study .goods-list .goods-item .goods-info .main-title {
+  line-height: 24px;
+}
