@@ -303,6 +303,40 @@
   border-color: #f40;
 }
 
+/* 侧边定位栏 */
 .site-position {
-  
+  position: fixed;
+  top: 478px;
+  left: 50%;
+  z-index: 999;
+  width: 50px;
+  height: 350px;
+  margin-left: 605px;
+  background-color: #fff;
+}
+
+.site-position-inner {
+  height: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.site-position .icon-wangwang {
+  display: block;
+  position: absolute;
+  top: -17px;
+  width: 50px;
+  height: 17px;
+  background: url(../img/wangwang.png) no-repeat 0 0/50px 17px;
+}
+
+.site-position .icon-wangwang {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.site-position .icon-wangwang.on {
+  background-color: #ff971b;
 }
