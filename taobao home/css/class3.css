@@ -334,6 +334,7 @@
 
 .site-position .position-block {
   display: block;
+  position: relative;
   width: 50px;
   height: 50px;
   padding: 10px 8px 0;
@@ -342,6 +343,17 @@
   text-align: center;
   line-height: 16px;
   color: #3c3c3c;
+}
+
+.site-position .position-block::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 8px;
+  width: 34px;
+  height: 0;
+  border-bottom: 1px solid #efefef;
 }
 
 .site-position .position-block.pink {
@@ -361,6 +373,8 @@
 }
 
 .site-position .position-block:hover,
-.site-position .icon-wangwang.on {
+.site-position .position-block.on {
   background-color: #ff971b;
+  color: #fff;
+  font-weight: bold;
 }
