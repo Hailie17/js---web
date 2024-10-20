@@ -8,7 +8,7 @@
   background-color: #ff9000;
 }
 
-.main-nav-bd h2{
+.main-nav-bd h2 {
   float: left;
   width: 190px;
   background-color: #ff5000;
@@ -75,19 +75,19 @@
   background: url(../img/icons_sprites.png) no-repeat 0 0/24px 597px;
 }
 
-.funcs-icon.icon-fhf{
+.funcs-icon.icon-fhf {
   background-position: 0 0;
 }
 
-.funcs-icon.icon-lx{
+.funcs-icon.icon-lx {
   background-position: 0 -85px;
 }
 
-.funcs-icon.icon-cx{
+.funcs-icon.icon-cx {
   background-position: 0 -44px;
 }
 
-.funcs-icon.icon-yx{
+.funcs-icon.icon-yx {
   background-position: 0 -132px;
 }
 
@@ -191,6 +191,7 @@
   background-color: #fff;
   border: 1px solid #ddd;
 }
+
 .main-show .tb-apps .tb-apps-wrap .apps-list .app-item:hover .app-qr {
   display: block;
 }
@@ -283,7 +284,7 @@
   line-height: 22px;
   font-size: 14px;
   color: #999;
-} 
+}
 
 .life-study .goods-list .goods-item .goods-info .other-info {
   line-height: 30px;
@@ -331,12 +332,35 @@
   background: url(../img/wangwang.png) no-repeat 0 0/50px 17px;
 }
 
-.site-position .icon-wangwang {
+.site-position .position-block {
   display: block;
   width: 50px;
   height: 50px;
+  padding: 10px 8px 0;
+  box-sizing: border-box;
+  font-size: 13px;
+  text-align: center;
+  line-height: 16px;
+  color: #3c3c3c;
 }
 
+.site-position .position-block.pink {
+  color: #f05;
+}
+
+.site-position .position-block.purple {
+  color: #8d7afb;
+}
+
+.site-position .position-block.green {
+  color: #a8c001;
+}
+
+.site-position .position-block.tb-red {
+  color: #f40;
+}
+
+.site-position .position-block:hover,
 .site-position .icon-wangwang.on {
   background-color: #ff971b;
 }
