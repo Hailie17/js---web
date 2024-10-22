@@ -1,15 +1,19 @@
-
-import AboutView from '../views/AboutView.vue'
 import Vue from 'vue';
 import Router from 'vue-router';
+
+import Index from '@/pages/Index.vue';
+import List from '@/pages/List.vue';
+import Detail from '@/pages/Detail.vue';
+import City from '@/pages/City.vue';
+import Search from '@/pages/Search.vue';
 
 Vue.use(Router)
 const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: AboutView
+      name: 'Index',
+      component: Index
     },
     {
       path: '/about',
