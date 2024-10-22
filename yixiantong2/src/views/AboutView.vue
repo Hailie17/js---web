@@ -16,8 +16,12 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import '@/assets/styles/mixins.scss';
+
 .about {
+  @include vh-center;
   text-align: center;
+  height: 100%;
   color: purple;
 }
 </style>
