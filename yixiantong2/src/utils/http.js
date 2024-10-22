@@ -1,10 +1,21 @@
-data = {
-  id: 1,
-  text: 'test'
+import axios from "axios";
+import qs from 'qs'
+
+class HTTP {
+  axiosPost (options) {
+    axios({
+      url: options.url,
+      method: 'post',
+      header: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      data: qs.stringify(options.data)
+    }).then((res) => {
+      options.success(res)
+    }).catch((err) => {
+      options.error(err)
+    })
+  }
 }
 
-qs.stringify(data);
-
-id=1&text=test
-
-qs.parse('id=1&text=test')
+export { HTTP}
