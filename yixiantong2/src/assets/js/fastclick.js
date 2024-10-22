@@ -1,4 +1,4 @@
-;(function () {
+(function () {
 	'use strict';
 
 	/**
@@ -10,7 +10,7 @@
 	 */
 
 	/*jslint browser:true, node:true*/
-	/*global define, Event, Node*/
+	// /*global define, Event, Node*/d
 
 
 	/**
@@ -743,7 +743,7 @@
 		}
 
 		// Chrome version - zero for other browsers
-		chromeVersion = +(/Chrome\/([0-9]+)/.exec(navigator.userAgent) || [,0])[1];
+		chromeVersion = +(/Chrome\/([0-9]+)/.exec(navigator.userAgent) || [0])[1];
 
 		if (chromeVersion) {
 
@@ -794,7 +794,7 @@
 		}
 
 		// Firefox version - zero for other browsers
-		firefoxVersion = +(/Firefox\/([0-9]+)/.exec(navigator.userAgent) || [,0])[1];
+		firefoxVersion = +(/Firefox\/([0-9]+)/.exec(navigator.userAgent) || [0])[1];
 
 		if (firefoxVersion >= 27) {
 			// Firefox 27+ does not have tap delay if the content is not zoomable - https://bugzilla.mozilla.org/show_bug.cgi?id=922896
@@ -826,16 +826,16 @@
 	};
 
 
-	if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
+	// if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
 
-		// AMD. Register as an anonymous module.
-		define(function() {
-			return FastClick;
-		});
-	} else if (typeof module !== 'undefined' && module.exports) {
-		module.exports = FastClick.attach;
-		module.exports.FastClick = FastClick;
-	} else {
-		window.FastClick = FastClick;
-	}
+	// 	// AMD. Register as an anonymous module.
+	// 	// define(function() {
+	// 	// 	return FastClick;
+	// 	// });
+	// } else if (typeof module !== 'undefined' && module.exports) {
+	// 	module.exports = FastClick.attach;
+	// 	module.exports.FastClick = FastClick;
+	// } else {
+	// 	window.FastClick = FastClick;
+	// }
 }());

@@ -1,15 +1,31 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>{{title}}</h1>
   </div>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+<script>
+export default {
+  name: 'HelloWorld',
+  data() {
+    return {
+      title: '一线生活'
+    }
+  }
+}
+</script>
+<style lang="scss" scoped>
+h1,h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin: 0 10px;
+    a {
+      color: #42b983;
+    }
   }
 }
 </style>
