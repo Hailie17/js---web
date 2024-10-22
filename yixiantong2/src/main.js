@@ -6,6 +6,7 @@ import store from './store'
 import '@/assets/styles/resets.css'
 import '@/assets/styles/border.css'
 import '@/assets/styles/common.scss'
+import '@/assets/styles/iconfont.css'
 import '@/assets/js/common'
 import '@/assets/js/fastclick'
 
