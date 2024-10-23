@@ -1,10 +1,16 @@
 <template>
-  <header class="header"></header>
+  <header class="header">
+    <city-selector></city-selector>
+  </header>
 </template>
 
 <script>
+import CitySelector from './Sub/CitySelector.vue'
 export default {
   name: 'HomeHeader',
+  components: {
+    CitySelector
+  }
 }
 </script>
 
