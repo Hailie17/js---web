@@ -25,9 +25,26 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/mixins.scss';
 @import '@/assets/styles/variables.scss';
-.header {
-  @include flex-row;
-  height: $headerHeight;
-  background-color: $defaultBgColor;
+.false-input {
+  flex: 1;
+  padding: .06rem .1rem .06rem 0;
+  box-sizing: border-box;
+  .input {
+    @include flex-row;
+    @include vh-center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    .placeholder {
+      font-size: .14rem;
+      color: #999;
+      .iconfont {
+        font-size: .18rem;
+        vertical-align: -.02rem;
+        margin-right: .05rem;
+      }
+    }
+  }
 }
 </style>
