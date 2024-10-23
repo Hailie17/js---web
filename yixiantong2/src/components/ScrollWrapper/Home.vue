@@ -10,15 +10,10 @@ import CommonHeader from '@/components/Header/Common.vue'
 import CityScrollWrapper from '@/components/ScrollWrapper/City.vue'
 
 export default {
-  name: 'City',
+  name: 'Home',
   components: {
     CommonHeader,
     CityScrollWrapper
-  },
-  data(){
-    return {
-      title: '城市选择'
-    }
   }
 }
 </script>
