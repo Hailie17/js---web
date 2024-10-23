@@ -1,15 +1,18 @@
 <template>
   <header class="header">
     <city-selector></city-selector>
+    <false-input></false-input>
   </header>
 </template>
 
 <script>
 import CitySelector from './Sub/CitySelector.vue'
+import FalseInput from './Sub/FalseInput.vue'
 export default {
   name: 'HomeHeader',
   components: {
-    CitySelector
+    CitySelector,
+    FalseInput
   }
 }
 </script>
