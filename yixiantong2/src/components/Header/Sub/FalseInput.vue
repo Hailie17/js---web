@@ -23,8 +23,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/mixins.scss';
-@import '@/assets/styles/variables.scss';
+@import '~@/assets/styles/mixins.scss';
+@import '~@/assets/styles/variables.scss';
 .false-input {
   flex: 1;
   padding: .06rem .1rem .06rem 0;
