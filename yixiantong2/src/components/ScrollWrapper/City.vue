@@ -12,6 +12,7 @@ import BetterScroll from 'better-scroll'
 export default {
   name: 'CityScrollWrapper',
   mounted(){
+    // 初始化
     this.scroll = new BetterScroll(this.$refs.wrapper)
   }
 }
