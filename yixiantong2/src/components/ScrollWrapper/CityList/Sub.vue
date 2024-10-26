@@ -1,16 +1,38 @@
 <template>
   <div class="city-item">
-    <span class="city">{{ cityInfo.cityName }}</span>
+    <span class="city" @click="onCityClick(cityInfo)">{{ cityInfo.cityName }}</span>
   </div>
 </template>
 
 <script>
+import {mapMutations} from "vuex";
+
 export default {
   name: 'CityListSub',
   props: {
     cityInfo: Object,
+  },
+  methods: {
+    ...mapMutations(['selectCity']),
+    onCityClick(cityInfo){
+      this.selectCity(cityInfo)
+      this.$router.push('/')
+    }
   }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import '~@/assets/styles/mixins.scss';
+@import '~@/assets/styles/variables.scss';
+.city-item {
+  @include flex-row;
+  align-items: center;
+  height: .5rem;
+  padding-left: .15rem;
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  font-size: .16rem;
+
+}
+</style>

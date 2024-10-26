@@ -8,12 +8,12 @@
 </template>
 
 <script>
+import {mapState} from "vuex";
+
 export default {
   name: 'CitySelector',
-  data() {
-    return {
-      cityName: '北京'
-    }
+  computed: {
+    ...mapState(['cityName'])
   }
 }
 </script>
