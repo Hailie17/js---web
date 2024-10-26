@@ -1,4 +1,5 @@
-const BASE_URL = 'http://study.jsplus.com/Yixiantong/'
+const BASE_URL = 'http://study.jsplusplus.com/Yixiantong/'
+// const BASE_URL = 'http://study.jsplus.com/Yixiantong/'
 
 const API = {
   GET_HOME_DATAS: BASE_URL + 'getHomeDatas',

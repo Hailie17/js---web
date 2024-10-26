@@ -18,6 +18,17 @@ export default {
     BetterScroll,
     CategoryIcons
   },
+  data(){
+    return {
+      homeDatas: {
+        foodDatas: [],
+        hotelDatas: [],
+        ktvDatas: [],
+        massageDatas: [],
+        x: []
+      }
+    }
+  },
   computed: {
     ...mapState(['cityId'])
   },
@@ -28,7 +39,14 @@ export default {
     getHomeDatas(cityId){
       const indexModel = new IndexModel() // 实例化
       indexModel.getHomeDatas(cityId).then((res)=> {
-        console.log(res)
+        if(res && res.status === 0 ) {
+          const data = res.data
+          this.homeDatas.foodDatas = data.foodDatas
+          this.homeDatas.hotelDatas = data.hotelDatas
+          this.homeDatas.ktvDatas = data.ktvDatas
+          this.homeDatas.massageDatas = data.massageDatas
+          this.homeDatas.viewDatas = data.viewDatas
+        }
       })
     }
   }
