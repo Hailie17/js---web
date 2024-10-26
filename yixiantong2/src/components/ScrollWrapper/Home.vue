@@ -1,19 +1,20 @@
 <template>
-  <div class="container">
-    <common-header :title="title"></common-header>
-    <city-scroll-wrapper></city-scroll-wrapper>
+  <div class="scroll-wrapper" ref="wrapper">
+    <div class="scroll-content">
+      <category-icons></category-icons>
+    </div>
   </div>
 </template>
 
 <script>
-import CommonHeader from '@/components/Header/Common.vue'
-import CityScrollWrapper from '@/components/ScrollWrapper/City.vue'
+import BetterScroll from "better-scroll";
+import CategoryIcons from './CategoryIcons/Index.vue'
 
 export default {
-  name: 'Home',
+  name: 'HomeScrollWrapper',
   components: {
-    CommonHeader,
-    CityScrollWrapper
+    BetterScroll,
+    CategoryIcons
   }
 }
 </script>
