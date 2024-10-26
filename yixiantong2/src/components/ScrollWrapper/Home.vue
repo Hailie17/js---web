@@ -9,6 +9,8 @@
 <script>
 import BetterScroll from "better-scroll";
 import CategoryIcons from './CategoryIcons/Index.vue'
+import {mapState} from "vuex";
+import {IndexModel} from "@/modules";
 
 export default {
   name: 'HomeScrollWrapper',
