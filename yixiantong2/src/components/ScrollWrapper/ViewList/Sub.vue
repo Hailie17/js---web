@@ -7,6 +7,7 @@
       <div class="info">
         <h1 class="title">{{data.name}}</h1>
         <p class="stars">
+          <stars :starNum="Number(data.star)"></stars>
           <span class="score">{{data.score}}</span>
         </p>
         <p class="others">
@@ -20,6 +21,17 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import Stars from "@/components/ScrollWrapper/Sub/Stars.vue";
+export default {
+  name: 'ViewListSub',
+  components: {
+    Stars
+  },
+  props: {
+    data: Object
+  }
+}
+</script>
 
 <style lang="scss" scoped></style>
