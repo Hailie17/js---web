@@ -34,6 +34,7 @@ export default {
   },
   mounted() {
     this.getHomeDatas(this.cityId)
+    this.scroll = new BetterScroll(this.$refs.wrapper) // 实例化
   },
   methods: {
     getHomeDatas(cityId){
