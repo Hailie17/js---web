@@ -50,7 +50,11 @@ export default {
       font-size: .26rem;
     }
   }
-
+  .icon-text {
+    font-size: .14rem;
+    text-align: center;
+    margin-top: .1rem;
+  }
 }
 
 </style>
