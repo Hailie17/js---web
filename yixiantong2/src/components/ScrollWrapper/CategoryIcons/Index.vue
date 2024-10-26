@@ -21,4 +21,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import '~@/assets/styles/mixins.scss';
+@import '~@/assets/styles/variables.scss';
+.icons-wrapper {
+  @include flex-row;
+  flex-wrap: wrap; /* 超出换行 */
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+</style>
