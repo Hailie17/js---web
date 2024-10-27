@@ -34,4 +34,30 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import '~@/assets/styles/mixins.scss';
+@import '~@/assets/styles/variables.scss';
+.view-item {
+  width: 50%;
+  padding: .1rem;
+  box-sizing: border-box;
+  .img {
+    width: 100%;
+    height: 1.1rem;
+    overflow: hidden;
+    .view-img {
+      width: 100%;
+      min-height: 1.1rem;
+    }
+  }
+  .info {
+    .title {
+      @include ellipsis;
+      height: .3rem;
+      font-size: .16rem;
+      line-height: .3rem;
+      color: #000;
+    }
+  }
+}
+</style>
