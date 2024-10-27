@@ -5,6 +5,7 @@
       <home-title :title="homeTitle.viewTitle"></home-title>
       <view-list :viewDatas="homeDatas.viewDatas"></view-list>
       <home-title :title="homeTitle.foodTitle"></home-title>
+      <food-list :foodDatas="homeDatas.foodDatas"></food-list>
       <home-title :title="homeTitle.hotelTitle"></home-title>
       <home-title :title="homeTitle.massageTitle"></home-title>
       <home-title :title="homeTitle.ktvTitle"></home-title>
@@ -17,9 +18,11 @@ import BetterScroll from "better-scroll";
 import CategoryIcons from './CategoryIcons/Index.vue'
 import HomeTitle from "@/components/ScrollWrapper/Sub/HomeTitle.vue";
 import ViewList from './ViewList/Index.vue'
+import FoodList from './FoodList/Index.vue'
+
 import {mapState} from "vuex";
 import {IndexModel} from "@/modules/index";
-import {formatJson} from '@/utils/tools'
+import tools from '@/utils/tools'
 
 export default {
   name: 'HomeScrollWrapper',
@@ -27,7 +30,8 @@ export default {
     BetterScroll,
     CategoryIcons,
     HomeTitle,
-    ViewList
+    ViewList,
+    FoodList
   },
   data(){
     return {
