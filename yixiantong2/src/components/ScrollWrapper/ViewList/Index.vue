@@ -18,4 +18,13 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import '~@/assets/styles/mixins.scss';
+@import '~@/assets/styles/variables.scss';
+.list-wrapper {
+  @include flex-row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+</style>
