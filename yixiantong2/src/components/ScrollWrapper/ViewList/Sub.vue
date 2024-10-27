@@ -8,13 +8,13 @@
         <h1 class="title">{{data.name}}</h1>
         <p class="stars">
           <stars :starNum="Number(data.star)"></stars>
-          <span class="score">{{data.score}}</span>
+          <span class="score">{{data.score}}</span>起
         </p>
         <p class="others">
-          <span class="item">
-            <span class="price">￥ {{data.default_price}}</span>
-            <span class="item">{{data.city_name}}</span>
+          <span class="item">￥
+            <span class="price">{{data.default_price}}</span>
           </span>
+          <span class="item">{{data.city_name}}</span>
         </p>
       </div>
     </router-link>
@@ -69,7 +69,7 @@ export default {
     }
     .others {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       height: .3rem;
       line-height: .3rem;
       .item {
