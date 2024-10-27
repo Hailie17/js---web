@@ -72,6 +72,14 @@ export default {
       justify-content: center;
       height: .3rem;
       line-height: .3rem;
+      .item {
+        font-size: .14rem;
+        .price {
+          font-size: .2rem;
+          color: $defaultGreen;
+          vertical-align: -.01rem;
+        }
+      }
     }
   }
 }
