@@ -7,7 +7,7 @@
       <div class="info">
         <h1 class="title">{{data.name}}</h1>
         <p class="stars">
-          <stars></stars>
+          <stars :starNum="Number(data.star)"></stars>
           <span class="price">￥ {{data.default_price}}/人</span>
         </p>
         <p class="keyword">
