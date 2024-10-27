@@ -3,6 +3,7 @@
     <div class="scroll-content">
       <category-icons></category-icons>
       <home-title :title="homeTitle.viewTitle"></home-title>
+      <view-list :viewDatas="homeDatas.viewDatas"></view-list>
       <home-title :title="homeTitle.foodTitle"></home-title>
       <home-title :title="homeTitle.hotelTitle"></home-title>
       <home-title :title="homeTitle.massageTitle"></home-title>
@@ -14,16 +15,18 @@
 <script>
 import BetterScroll from "better-scroll";
 import CategoryIcons from './CategoryIcons/Index.vue'
+import HomeTitle from "@/components/ScrollWrapper/Sub/HomeTitle.vue";
+import ViewList from './ViewList/Index.vue'
 import {mapState} from "vuex";
 import {IndexModel} from "@/modules/index";
-import HomeTitle from "@/components/ScrollWrapper/Sub/HomeTitle.vue";
 
 export default {
   name: 'HomeScrollWrapper',
   components: {
     BetterScroll,
     CategoryIcons,
-    HomeTitle
+    HomeTitle,
+    ViewList
   },
   data(){
     return {
