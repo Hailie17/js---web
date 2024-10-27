@@ -19,6 +19,7 @@ import HomeTitle from "@/components/ScrollWrapper/Sub/HomeTitle.vue";
 import ViewList from './ViewList/Index.vue'
 import {mapState} from "vuex";
 import {IndexModel} from "@/modules/index";
+import {formatJson} from '@/utils/tools'
 
 export default {
   name: 'HomeScrollWrapper',
@@ -59,7 +60,7 @@ export default {
       indexModel.getHomeDatas(cityId).then((res)=> {
         if(res && res.status === 0 ) {
           const data = res.data
-          this.homeDatas.foodDatas = data.foodDatas
+          this.homeDatas.foodDatas = tools.formatJson(data.foodDatas, 'keyword')
           this.homeDatas.hotelDatas = data.hotelDatas
           this.homeDatas.ktvDatas = data.ktvDatas
           this.homeDatas.massageDatas = data.massageDatas
