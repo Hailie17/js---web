@@ -58,6 +58,21 @@ export default {
       line-height: .3rem;
       color: #000;
     }
+    .stars {
+      height: .3rem;
+      line-height: .3rem;
+      font-size: .14rem;
+      color: #ccc;
+      .active, .score {
+        color: $starColor;
+      }
+    }
+    .others {
+      display: flex;
+      justify-content: center;
+      height: .3rem;
+      line-height: .3rem;
+    }
   }
 }
 </style>
