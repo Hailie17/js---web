@@ -65,12 +65,16 @@ export default {
     }
     .others {
       display: flex;
+      margin-top: .1rem;
       justify-content: space-between;
       line-height: .25rem;
       .item {
         font-size: .14rem;
         &:nth-child(1) {
           color: $defaultGreen;
+          .price {
+            font-size: .2rem;
+          }
         }
       }
     }
