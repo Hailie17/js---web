@@ -7,6 +7,7 @@
       <home-title :title="homeTitle.foodTitle"></home-title>
       <food-list :foodDatas="homeDatas.foodDatas"></food-list>
       <home-title :title="homeTitle.hotelTitle"></home-title>
+      <hotel-list :hotelDatas="homeDatas.hotelDatas"></hotel-list>
       <home-title :title="homeTitle.massageTitle"></home-title>
       <home-title :title="homeTitle.ktvTitle"></home-title>
     </div>
@@ -19,6 +20,7 @@ import CategoryIcons from './CategoryIcons/Index.vue'
 import HomeTitle from "@/components/ScrollWrapper/Sub/HomeTitle.vue";
 import ViewList from './ViewList/Index.vue'
 import FoodList from './FoodList/Index.vue'
+import HotelList from './HotelList/Index.vue'
 
 import {mapState} from "vuex";
 import {IndexModel} from "@/modules/index";
@@ -31,7 +33,8 @@ export default {
     CategoryIcons,
     HomeTitle,
     ViewList,
-    FoodList
+    FoodList,
+    HotelList
   },
   data(){
     return {
