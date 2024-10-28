@@ -2,7 +2,7 @@
   <div class="food-item">
     <router-link :to="{path: '/detail', query: {field: 'food', id: data.id}}">
       <div class="img">
-        <img :src="data.img" class="food-img" alt="data.name">
+        <img :src="data.img" class="food-img" :alt="data.name">
       </div>
       <div class="info">
         <h1 class="title">{{data.name}}</h1>
