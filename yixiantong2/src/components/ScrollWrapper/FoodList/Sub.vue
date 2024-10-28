@@ -41,11 +41,11 @@ export default {
 @import '~@/assets/styles/mixins.scss';
 @import '~@/assets/styles/variables.scss';
 .food-item {
+  position: relative;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #ddd;
   .img {
-    float: left;
     width: 1.2rem;
     height: 1.2rem;
     padding: .1rem;
@@ -56,7 +56,11 @@ export default {
     }
   }
   .info {
-    padding: .1rem .1rem 0 0 ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .1rem .1rem 0 1.2rem ;
     margin-left: 1.2rem;
     box-sizing: border-box;
     .title {
