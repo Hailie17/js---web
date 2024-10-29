@@ -51,7 +51,8 @@ export default {
         ktvTitle: '推荐KTV',
         massageTitle: '推荐按摩',
         viewTitle: '推荐美景',
-      }
+      },
+      currentCityId: ''
     }
   },
   computed: {
@@ -59,7 +60,13 @@ export default {
   },
   mounted() {
     this.getHomeDatas(this.cityId)
+    this.currentCityId = this.cityId
     this.scroll = new BetterScroll(this.$refs.wrapper) // 实例化
+  },
+  activated() {
+    if(this.currentCityId != this.cityId) { // 数据不一样时强制更新
+      this.currentCityId =this.cityId
+    }
   },
   methods: {
     getHomeDatas(cityId){
