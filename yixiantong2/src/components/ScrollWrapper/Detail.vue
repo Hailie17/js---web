@@ -9,6 +9,9 @@
 <script>
 import BetterScroll from "better-scroll";
 export default {
-  name: 'DetailScrollWrapper'
+  name: 'DetailScrollWrapper',
+  mounted(){
+    this.scroll = new BetterScroll(this.$refs.wrapper)
+  }
 }
 </script>
