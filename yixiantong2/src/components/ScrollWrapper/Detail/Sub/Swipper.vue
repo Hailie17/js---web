@@ -1,8 +1,8 @@
 <template>
   <div class="swiper-wrap">
     <swiper :options="swiperOption">
-      <swiper-slide v-for="(item, index) of picDatas">
-        <img class="swiper-img" :src="picDatas[index]" alt="">
+      <swiper-slide v-for="(item, index) of picDatas" :pic="item" :key="index">
+        <img class="swiper-img" :src="item" alt="">
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
