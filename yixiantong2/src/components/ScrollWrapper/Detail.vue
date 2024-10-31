@@ -29,6 +29,10 @@ export default {
       detailModel.getDetail(field,id).then(res => {
         if (res && res.status === 0) {
           const data = res.data
+          data.pics && (data.pics = tools.jsonToArr(data.pics))
+          data.comment_keyword && (data.comment_keyword = tools.strToArr(data.comment_keyword))
+          data.recom && (data.recom = tools.replaceToSpace(data.recom))
+          data.service && (data.service = tools.jsonToArr(data.service))
         }
       })
     }
