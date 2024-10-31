@@ -27,7 +27,9 @@ export default {
     getDetail(field, id) {
       const detailModel = new DetailModel()
       detailModel.getDetail(field,id).then(res => {
-        console.log(res)
+        if (res && res.status === 0) {
+          const data = res.data
+        }
       })
     }
   }
