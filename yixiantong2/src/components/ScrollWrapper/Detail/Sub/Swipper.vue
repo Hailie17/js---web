@@ -32,4 +32,12 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.swiper-slide {
+  height: 2rem;
+}
+.swiper-img {
+  width: 100%;
+  height: 100%;
+}
+</style>
