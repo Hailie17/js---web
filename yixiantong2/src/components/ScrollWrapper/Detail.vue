@@ -14,7 +14,8 @@ export default {
   data(){
     return {
       field: '',
-      id: 0
+      id: 0,
+      detailData: {}
     }
   },
   mounted(){
@@ -33,6 +34,7 @@ export default {
           data.comment_keyword && (data.comment_keyword = tools.strToArr(data.comment_keyword))
           data.recom && (data.recom = tools.replaceToSpace(data.recom))
           data.service && (data.service = tools.jsonToArr(data.service))
+          this.detailData = data
         }
       })
     }
