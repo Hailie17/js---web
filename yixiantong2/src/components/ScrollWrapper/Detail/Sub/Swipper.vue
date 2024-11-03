@@ -33,6 +33,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~@/assets/styles/mixins.scss';
+@import '~@/assets/styles/variables.scss';
+.swiper-wrap >>> .swiper-pagination-bullet-active{
+  background-color: $defaultGreen;
+}
 .swiper-slide {
   height: 2rem;
 }
