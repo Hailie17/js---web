@@ -1,16 +1,20 @@
 <template>
   <div class="scroll-wrapper" ref="wrapper">
     <div class="scroll-content">
-
+      <detail-swiper :picDatas="detailData.pics"></detail-swiper>
     </div>
   </div>
 </template>
 
 <script>
 import BetterScroll from "better-scroll";
+import DetailSwiper from './Detail/Sub/Swipper.vue'
 import {DetailModel} from "@/modules/detail";
 export default {
   name: 'DetailScrollWrapper',
+  components: {
+    DetailSwiper
+  },
   data(){
     return {
       field: '',
