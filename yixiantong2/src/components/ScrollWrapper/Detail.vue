@@ -2,7 +2,7 @@
   <div class="scroll-wrapper" ref="wrapper">
     <div class="scroll-content">
       <detail-swiper :picDatas="detailData.pics"></detail-swiper>
-      <detail-food :name="detailData.name"></detail-food>
+      <detail-food v-if="field === 'food'" :name="detailData.name" :starNum="Number(detailData.star)" :score="detailData.score"></detail-food>
     </div>
   </div>
 </template>
