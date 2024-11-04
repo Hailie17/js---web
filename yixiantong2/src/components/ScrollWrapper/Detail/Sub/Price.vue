@@ -19,4 +19,23 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.price-bd {
+  display: flex;
+  height: .44rem;
+  padding: .03rem .15rem 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  line-height: .39rem;
+  box-sizing: border-box;
+  .icon-price {
+    font-size: .18rem;
+    margin: .08rem .1rem 0 0;
+    color: #000;
+  }
+  .price {
+    font-size: .14rem;
+    margin-top: .1rem;
+  }
+}
+</style>
