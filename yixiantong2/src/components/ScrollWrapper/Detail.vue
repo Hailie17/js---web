@@ -9,7 +9,7 @@
 
 <script>
 import BetterScroll from "better-scroll";
-import DetailSwiper from './Detail/Sub/Swipper.vue'
+import DetailSwiper from './Sub/Swipper.vue'
 import DetailFood from './Detail/Food.vue'
 import {DetailModel} from "@/modules/detail";
 export default {
