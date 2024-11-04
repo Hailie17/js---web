@@ -2,6 +2,7 @@
   <div class="scroll-wrapper" ref="wrapper">
     <div class="scroll-content">
       <detail-swiper :picDatas="detailData.pics"></detail-swiper>
+      <detail-food :name="detailData.name"></detail-food>
     </div>
   </div>
 </template>
@@ -9,11 +10,12 @@
 <script>
 import BetterScroll from "better-scroll";
 import DetailSwiper from './Detail/Sub/Swipper.vue'
+import DetailFood from './Detail/Food.vue'
 import {DetailModel} from "@/modules/detail";
 export default {
   name: 'DetailScrollWrapper',
   components: {
-    DetailSwiper
+    DetailSwiper,DetailFood
   },
   data(){
     return {
