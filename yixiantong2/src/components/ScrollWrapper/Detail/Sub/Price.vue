@@ -20,6 +20,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~@/assets/styles/mixins';
+@import '~@/assets/styles/variables';
 .price-bd {
   display: flex;
   height: .44rem;
@@ -36,6 +38,7 @@ export default {
   .price {
     font-size: .14rem;
     margin-top: .1rem;
+    color: $defaultOrange;
   }
 }
 </style>
