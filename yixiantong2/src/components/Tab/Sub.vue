@@ -1,9 +1,11 @@
 <template>
-  <div :class="['tab-item',{current: cityInfo.cityId === cityInfo}]"></div>
+  <div @click="onTabClick(cityInfo)" :class="['tab-item',{current: cityInfo.cityId === cityInfo}]">
+    <span>{{cityInfo.cityName}}</span>
+  </div>
 </template>
 
 <script>
-import {mapState} from "vuex";
+import {mapMutations, mapState} from "vuex";
 export default {
   name: 'TabSub',
   props: {
@@ -13,7 +15,10 @@ export default {
     ...mapState(['cityId'])
   },
   methods: {
-
+    ...mapMutations(['selectCity']),
+    onTabClick(cityInfo){
+      this.selectCity(cityInfo)
+    }
   }
 }
 </script>
