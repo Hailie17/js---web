@@ -52,7 +52,8 @@ export default {
         massageTitle: '推荐按摩',
         viewTitle: '推荐美景',
       },
-      currentCityId: ''
+      currentCityId: '',
+      errorShow: false
     }
   },
   computed: {
@@ -79,6 +80,8 @@ export default {
           this.homeDatas.ktvDatas = data.ktvDatas
           this.homeDatas.massageDatas = data.massageDatas
           this.homeDatas.viewDatas = data.viewDatas
+        } else {
+          this.errorShow = true
         }
       })
     }
