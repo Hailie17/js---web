@@ -33,5 +33,19 @@ export default {
      */
     replaceToSpace(str) {
         return str.replace(/,/g, ' ')
+    },
+
+    /**
+     * 替换空格
+     */
+    trimSpace(str){
+        return str.replace(/\s+/g, str)
+    },
+    /**
+     * 节流函数
+     */
+    throttle(fn, delay){
+        var t= null
+        began = new Date().getTime() // 获取时间戳
     }
 }
