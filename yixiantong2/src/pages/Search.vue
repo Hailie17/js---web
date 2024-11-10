@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <common-header :title="title"></common-header>
-    <search-input></search-input>
+    <search-input @onSearch="onSearch"></search-input>
   </div>
 </template>
 
@@ -15,7 +15,19 @@ export default {
   },
   data(){
     return {
-      title: '商家搜索'
+      title: '商家搜索',
+      data:{}
+    }
+  },
+  methods: {
+    onSearch(res){
+      if (res && res.status === 0) {
+        const data = res.data()
+        data.foodDatas = tools.formatJson(data.foodDatas, 'keyword')
+        this.data = data
+      } else {
+        this.data = res // 返回错误信息
+      }
     }
   }
 }
