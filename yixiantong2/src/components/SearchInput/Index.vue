@@ -32,6 +32,7 @@ export default {
       const searchModule = new SearchModel()
       searchModule.searchAction(keyword, this.cityId).then(res => {
         console.log(res)
+        this.$emit('onSearch',res)
       })
     }
   }
