@@ -8,6 +8,10 @@
 </template>
 
 <script>
+import tools from "@/utils/tools";
+import {SearchModel} from "@/modules/search";
+import {mapState} from "vuex";
+
 export default {
   name: 'SearchInput',
   data(){
@@ -16,9 +20,19 @@ export default {
       keyword: ''
     }
   },
+  computed(){
+    ...mapState(['cityId'])
+  },
   methods: {
     onSearch(){
-
+      const keyword = tools.trimSpace(this.keyword) // 去掉空格
+      if (keyword.length <= 0){
+        return
+      }
+      const searchModule = new SearchModel()
+      searchModule.searchAction(keyword, this.cityId).then(res => {
+        console.log(res)
+      })
     }
   }
 }
