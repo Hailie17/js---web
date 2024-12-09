@@ -42,6 +42,9 @@ importers:
       '@vue/cli-service':
         specifier: ~5.0.0
         version: 5.0.8(@vue/compiler-sfc@3.5.13)(lodash@4.17.21)(sass-loader@12.6.0(sass@1.82.0)(webpack@5.97.1))(vue@3.5.13)(webpack-sources@3.2.3)
+      '@vue/compiler-sfc':
+        specifier: ^3.0.0-beta.1
+        version: 3.5.13
       eslint:
         specifier: ^7.32.0
         version: 7.32.0
@@ -54,6 +57,9 @@ importers:
       sass-loader:
         specifier: ^12.0.0
         version: 12.6.0(sass@1.82.0)(webpack@5.97.1)
+      vue-cli-plugin-vue-next:
+        specifier: ~0.1.4
+        version: 0.1.4(@vue/compiler-sfc@3.5.13)(vue@3.5.13)(webpack@5.97.1)
 
 packages:
 
@@ -3674,6 +3680,13 @@ packages:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
 
+  vue-cli-plugin-vue-next@0.1.4:
+    resolution: {integrity: sha512-uSr/2c+enS7Ps5Qu54dOno+oTY69LXJCzksiqoSDE2bdxiqlkFjeayrMKV7GOeYNnmqEpExhZ2ZT0359la/wSA==}
+    deprecated: This package has been deprecated because Vue CLI >= 4.5 has built-in support for Vue 3
+    peerDependencies:
+      '@vue/compiler-sfc': ^3.0.0-alpha.4
+      vue: ^3.0.0-alpha.4
+
   vue-eslint-parser@8.3.0:
     resolution: {integrity: sha512-dzHGG3+sYwSf6zFBa0Gi9ZDshD7+ad14DGOdTLjruRVgZXe2J+DcZ9iUhyR48z5g1PqRa20yt3Njna/veLJL/g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -3700,6 +3713,18 @@ packages:
       prettier:
         optional: true
       vue-template-compiler:
+        optional: true
+
+  vue-loader@16.8.3:
+    resolution: {integrity: sha512-7vKN45IxsKxe5GcVCbc2qFU5aWzyiLrYJyUuMz4BQLKctCj/fmCa0w6fGiiQ2cLFetNcek1ppGJQDCup0c1hpA==}
+    peerDependencies:
+      '@vue/compiler-sfc': ^3.0.8
+      vue: ^3.2.13
+      webpack: ^4.1.0 || ^5.0.0-0
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
+      vue:
         optional: true
 
   vue-loader@17.4.2:
@@ -7837,6 +7862,15 @@ snapshots:
 
   vary@1.1.2: {}
 
+  vue-cli-plugin-vue-next@0.1.4(@vue/compiler-sfc@3.5.13)(vue@3.5.13)(webpack@5.97.1):
+    dependencies:
+      '@vue/compiler-sfc': 3.5.13
+      chalk: 4.1.2
+      vue: 3.5.13
+      vue-loader: 16.8.3(@vue/compiler-sfc@3.5.13)(vue@3.5.13)(webpack@5.97.1)
+    transitivePeerDependencies:
+      - webpack
+
   vue-eslint-parser@8.3.0(eslint@7.32.0):
     dependencies:
       debug: 4.4.0
@@ -7917,6 +7951,16 @@ snapshots:
       - velocityjs
       - walrus
       - whiskers
+
+  vue-loader@16.8.3(@vue/compiler-sfc@3.5.13)(vue@3.5.13)(webpack@5.97.1):
+    dependencies:
+      chalk: 4.1.2
+      hash-sum: 2.0.0
+      loader-utils: 2.0.4
+      webpack: 5.97.1
+    optionalDependencies:
+      '@vue/compiler-sfc': 3.5.13
+      vue: 3.5.13
 
   vue-loader@17.4.2(@vue/compiler-sfc@3.5.13)(vue@3.5.13)(webpack@5.97.1):
     dependencies:
