@@ -9,7 +9,7 @@ module.exports = defineConfig({
     },
     proxy:{
       '/api':{
-        target: 'http://v.juhe.cm',
+        target: 'http://v.juhe.cn',
         changeOrigin: true,
         ws: true,
         secure: false,
