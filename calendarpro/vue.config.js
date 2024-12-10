@@ -6,6 +6,17 @@ module.exports = defineConfig({
     overlay: {
       warnings: false,
       errors: false
+    },
+    proxy:{
+      '/api':{
+        target: 'http://v.juhe.cm',
+        changeOrigin: true,
+        ws: true,
+        secure: false,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
     }
-  }
+  },
 })
