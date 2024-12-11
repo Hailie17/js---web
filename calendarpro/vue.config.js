@@ -3,10 +3,10 @@ module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
   devServer: {
-    overlay: {
-      warnings: false,
-      errors: false
-    },
+    // overlay: {
+    //   warnings: false,
+    //   errors: false
+    // },
     proxy:{
       '/api':{
         target: 'http://v.juhe.cn',
