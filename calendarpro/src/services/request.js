@@ -15,3 +15,39 @@ function getDaydata(date){
     })
   })
 }
+
+function getMonthdata(yearMonth){
+  return new Promise((resolve, reject) => {
+    axiosPost({
+      url: '/api/calendar/month',
+      data: {'year-month' : yearMonth},
+      success(data) {
+        resolve(data)
+      },
+      error(err) {
+        reject(err)
+      }
+    })
+  })
+}
+
+function getYeardata(year){
+  return new Promise((resolve, reject) => {
+    axiosPost({
+      url: '/api/calendar/year',
+      data: {year},
+      success(data) {
+        resolve(data)
+      },
+      error(err) {
+        reject(err)
+      }
+    })
+  })
+}
+
+export {
+  getDaydata,
+  getMonthdata,
+  getYeardata
+}
