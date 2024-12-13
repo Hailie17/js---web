@@ -1,5 +1,4 @@
 import { axiosPost } from "@/libs/http";
-import { reject, resolve } from "core-js/fn/promise";
 
 function getDaydata(date){
   return new Promise((resolve, reject) => {
@@ -15,7 +14,7 @@ function getDaydata(date){
     })
   })
 }
-
+// 111
 function getMonthdata(yearMonth){
   return new Promise((resolve, reject) => {
     axiosPost({
