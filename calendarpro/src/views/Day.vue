@@ -3,8 +3,16 @@
 </template>
 
 <script>
+import getDay from '@/services'
+import {onMounted} from 'vue'
+
 export default {
-  name: 'Day'
+  name: 'DayPage',
+  setup() {
+    onMounted(()=> {
+      getDay('day', '2024/12/14')
+  })
+  }
 }
 </script>
 
