@@ -1,4 +1,4 @@
-import { axiosPost } from "@/libs/http";
+import { axiosPost} from "@/libs/http";
 
 function getDaydata(date){
   return new Promise((resolve, reject) => {

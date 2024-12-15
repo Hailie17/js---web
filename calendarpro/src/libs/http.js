@@ -13,14 +13,14 @@ function axiosPost(configs) {
     data: qs.stringify({
       ...configs.data,
       key: JUHE_APPKEY
-    })
+    }),
   })
   .then(res => {
     configs.success(res.data)
   })
   .catch(res=> {
     configs.error(res)
-  })
+  })  
 }
 
 function axiosGet(configs) {

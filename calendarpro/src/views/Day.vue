@@ -10,7 +10,7 @@ export default {
   name: 'DayPage',
   setup() {
     onMounted(()=> {
-      getDay('day', '2024/12/14')
+      getDay('day', '2024-12-14')
   })
   }
 }
