@@ -3,8 +3,16 @@
 </template>
 
 <script>
+import getDay from '@/services'
+import { onMounted } from 'vue'
+
 export default {
-  name: 'Year'
+  name: 'YearPage',
+  setup(){
+    onMounted(()=> {
+      getDay('year', '2024')
+    })
+  }
 }
 </script>
 
