@@ -821,7 +821,7 @@
 	 * @param {Element} layer The layer to listen on
 	 * @param {Object} [options={}] The options to override the defaults
 	 */
-	FastClick.attach = function(layer, options) {
+	FastClick.attach = function(layer, options ) {
 		return new FastClick(layer, options);
 	};
 
@@ -833,7 +833,7 @@
 	// 	// 	return FastClick;
 	// 	// });
 	// } else if (typeof module !== 'undefined' && module.exports) {
-	// 	module.exports = FastClick.attach;
+		// module.exports = FastClick.attach;
 	// 	module.exports.FastClick = FastClick;
 	// } else {
 	// 	window.FastClick = FastClick;
