@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <my-header>{{headerTitle}}</my-header>
+    <my-header>{{headTitle}}</my-header>
     <router-view/>
   </div>
 </template>

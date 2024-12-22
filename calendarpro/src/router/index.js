@@ -4,17 +4,17 @@ import Day from '@/views/Day.vue'
 const routes = [
   {
     path: '/',
-    name: 'Day',
+    name: 'day',
     component: Day
   },
   {
     path: '/month',
-    name: 'Month',
+    name: 'month',
     component: () => import(/* webpackChunkName: "about" */ '../views/Month.vue')
   },
   {
     path: '/year',
-    name: 'Year',
+    name: 'year',
     component: () => import(/* webpackChunkName: "about" */ '../views/Year.vue')
   },
 
