@@ -21,9 +21,9 @@ export default {
 <style lang="scss" scoped>
 .tab-icon {
   display: inline-block;
-}
+
 .icon {
-  position: fixed;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: .25rem;
@@ -50,5 +50,5 @@ export default {
       color: #ed4040;
     }
   }
-
+}
 </style>
