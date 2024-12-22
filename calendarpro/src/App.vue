@@ -7,6 +7,7 @@
 
 <script>
 import MyHeader from '@/components/Header'
+import {useRouter} from 'vue-router'
 import { useStore } from 'vuex';
 import {computed} from 'vue'
 
@@ -18,7 +19,9 @@ export default {
   },
   setup(){
     const store = useStore(),
-          state = store.state
+          state = store.state,
+          router = useRouter()
+    router.push('/')
     return computed(() => state).value // {}
   }
 }

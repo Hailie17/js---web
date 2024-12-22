@@ -212,3 +212,8 @@ hr {
   border: medium none;
   border-top: .02rem solid #cacaca;
 }
+
+.container {
+  padding: .82rem 0 .44rem 0;
+  box-sizing: border-box;
+}
