@@ -1,32 +1,54 @@
 <template>
-  <div class="header">
-    <h1>
-      <slot></slot>
-    </h1>
-  </div>
+  <router-link :to="path" class="tab-icon">
+    <i class="icon">{{ iconText }}</i>
+    <p class="text">
+      <slot>{{ tabText }}</slot>
+    </p>
+  </router-link>
 </template>
 
 <script>
 //888
 export default {
-  name: 'MyHeader'
+  name: 'TabIcon',
+  props: {
+    iconText: String,
+    path: String
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: .44rem;
-  z-index: 1;
-  background-color: #ed4040;
-  text-align: center;
-  line-height: .44rem;
-  .h1 {
-    font-size: .18rem;
-    color: #fff;
-  }
+.tab-icon {
+  display: inline-block;
 }
+.icon {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: .25rem;
+  height: .25rem;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #999;
+  font-size: .12rem;
+  transition: all .5s;
+  }
+  .text {
+    font-size: .12rem;
+    text-align: center;
+    margin-top: .02rem;
+    color: #999;
+    transition: color .5s;
+  }
+  &.router-link-active {
+    .icon {
+      background-color: #ed4040;
+      color: #fff;
+    }
+    .text {
+      color: #ed4040;
+    }
+  }
+
 </style>

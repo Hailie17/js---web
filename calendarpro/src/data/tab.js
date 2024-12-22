@@ -9,7 +9,7 @@ export default [
   {
     iconText: getIconData('month'),
     tabText: '近期',
-    path: '/year_month'
+    path: '/month'
   },
   {
     iconText: getIconData('year'),
