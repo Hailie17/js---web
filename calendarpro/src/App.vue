@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <my-header>当天信息</my-header>
+    <my-header>{{headerTitle}}</my-header>
     <router-view/>
   </div>
 </template>
