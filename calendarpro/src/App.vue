@@ -27,7 +27,8 @@ export default {
     router.push('/')
     watch(() => {
       return router.currentRoute.value.name
-    }, (v) => {console.log('v', v);
+    }, (v) => {
+      store.commit('setHeadTitle', v)
     })
     return computed(() => state).value // {}
   }
