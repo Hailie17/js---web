@@ -11,7 +11,7 @@ import MyHeader from '@/components/Header'
 import Tab from '@/components/Tab'
 import {useRouter} from 'vue-router'
 import { useStore } from 'vuex';
-import {computed} from 'vue'
+import {computed, watch} from 'vue'
 
 
 export default {
@@ -25,6 +25,10 @@ export default {
           state = store.state,
           router = useRouter()
     router.push('/')
+    watch(() => {
+      return router.currentRoute.value.name
+    }, (v) => {console.log('v', v);
+    })
     return computed(() => state).value // {}
   }
 }
