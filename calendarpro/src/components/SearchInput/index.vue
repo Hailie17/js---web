@@ -5,14 +5,23 @@
 </template>
 
 <script>
-
+import {ref} from 'vue'
 export default {
   name: 'SearchInput',
-  components: {
-   
+  props: {
+    placeholder: String,
+    maxlength: Number
   },
   setup(){
-    
+    const inputValue = ref('')
+
+    const searchData = (e) => {
+
+    }
+    return {
+      inputValue,
+      searchData
+    }
   }
 }
 </script>

@@ -1,3 +1,5 @@
 export default {
-  headTitle:'近期日期'
+  headTitle:'当天信息',
+  placeholder: '请输入',
+  maxlength: 8
 }
