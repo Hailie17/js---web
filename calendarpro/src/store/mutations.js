@@ -18,21 +18,22 @@ export default {
   setMaxLength(state, routeName) {
     switch(routeName) {
       case 'day': 
-        state.setMaxLength = 8;
+        state.maxlength = 8;
         break;
       case 'month':
-        state.setMaxLength = 6;
+        state.maxlength = 6;
         break;
       case 'year':
-        state.setMaxLength = 6;
+        state.maxlength = 6;
         break;
       default:
-        state.setMaxLength = 8;
+        state.maxlength = 8;
         break;
     }
   },
   setPlaceholder(state, routeName) {
-    const date = new Date(),
+    const date = new Date()
+    let year = date.getFullYear(),
           month = date.getMonth() + 1,
           day = date.getDate()
     month = month < 10 ? '0' + month : month
@@ -40,16 +41,16 @@ export default {
     
     switch(routeName) {
       case 'day': 
-        state.setMaxLength = 8;
+        state.placeholder = `${year}${month}${day}（${year}年${month}月${day}日）`;
         break;
       case 'month':
-        state.setMaxLength = 6;
+        state.placeholder = `${year}${month}（${year}年${month}月）`;
         break;
       case 'year':
-        state.setMaxLength = 6;
+        state.placeholder = `${year}（${year}年）`;
         break;
       default:
-        state.setMaxLength = 8;
+        state.placeholder = `${year}${month}${day}（${year}年${month}月${day}日）`;
         break;
     }
   },
