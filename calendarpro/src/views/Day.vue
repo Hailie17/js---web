@@ -5,12 +5,15 @@
 <script>
 import getDay from '@/services'
 import {onMounted} from 'vue'
+import {useStore} from 'vuex'
 
 export default {
   name: 'DayPage',
   setup() {
+    const store = useStore(),
+          state = store.state
     onMounted(()=> {
-      getDay('day', '2024-12-14')
+      getDay(store, 'day', '2024-12-14')
   })
   }
 }

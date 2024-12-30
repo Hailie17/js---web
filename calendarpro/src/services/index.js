@@ -1,6 +1,6 @@
 import { getDaydata, getMonthdata, getYeardata } from "./request";
 
-export default async (feild, date) => {
+export default async (store, feild, date) => {
   let data = null
 
   switch (feild) {
@@ -14,5 +14,10 @@ export default async (feild, date) => {
       data = await getYeardata(date);
       break
   }
+
+  if(data.error_code !== 0) {
+    
+  }
+
   return data
 }

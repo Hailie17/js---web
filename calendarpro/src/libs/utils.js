@@ -17,6 +17,27 @@ function getIconData(type) {
   }
 }
 
+function formatChsDate(date, type) {
+  const _arr = date.split('-')
+  switch(type) {
+    case 'day':
+      return `${_arr[0]}年${_arr[1]}月${_arr[2]}日`;
+    case 'month':
+      return `${_arr[0]}年${_arr[1]}月`;
+    case 'year':
+      return `${_arr[0]}年`;
+    default:
+      return `${_arr[0]}年${_arr[1]}月${_arr[2]}日`;
+  }
+}
+
+function mapForChsDate(date, key) {
+  date.map((item) => {
+    item[key] = formatChsDate(item[key])
+    return item
+  })
+}
+
 export {
-  getIconData
+  getIconData, mapForChsDate, formatChsDate
 }

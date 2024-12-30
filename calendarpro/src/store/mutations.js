@@ -54,5 +54,7 @@ export default {
         break;
     }
   },
-
+  setErrorCode(state, errorCode){
+    state.errorCode = errorCode
+  }
 }
