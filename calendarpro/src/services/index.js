@@ -1,4 +1,4 @@
-import { formatChsDate } from "@/libs/utils";
+import { formatChsDate, mapForChsDate } from "@/libs/utils";
 import { getDaydata, getMonthdata, getYeardata } from "./request";
 
 export default async (store, feild, date) => {
@@ -30,6 +30,9 @@ export default async (store, feild, date) => {
       break;
     case 'month':
       res = data.result.data.holiday_array
+      res = mapForChsDate(res, 'festival')
+      break;
+    case ''
   }
 
   return data
