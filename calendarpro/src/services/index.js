@@ -22,7 +22,7 @@ export default async (store, feild, date) => {
   }
 
   let res = null
-  switch(field) {
+  switch(feild) {
     case 'day':
       res = data.result.data
       res.date = formatChsDate(res.date, 'day')
@@ -32,8 +32,12 @@ export default async (store, feild, date) => {
       res = data.result.data.holiday_array
       res = mapForChsDate(res, 'festival')
       break;
-    case ''
+    case 'year':
+      res = data.result.data.holiday_list
+      res = mapForChsDate(res, 'startday')
   }
-// 888888888
-  return data
+  store.commit('setData', {
+    feild, 
+    data: res
+  })
 }
