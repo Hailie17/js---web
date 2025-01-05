@@ -18,6 +18,7 @@ function getIconData(type) {
 }
 
 function formatChsDate(date, type) {
+  
   const _arr = date.split('-')
   switch(type) {
     case 'day':

@@ -25,7 +25,7 @@ export default {
   padding: .15rem;
   box-sizing: border-box;
   .card {
-    background: url('~@/assets/img/bg.jpg') no-repeat center/cover;
+    background: url('~@/assets/images/bg.jpg') no-repeat center/cover;
     border-radius: .15rem;
     overflow: hidden;
     border: 1px solid #ddd;
