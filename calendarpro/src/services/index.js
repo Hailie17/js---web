@@ -1,10 +1,10 @@
 import { formatChsDate, mapForChsDate } from "@/libs/utils";
 import { getDaydata, getMonthdata, getYeardata } from "./request";
 
-export default async (store, feild, date) => {
+export default async (store, field, date) => {
   let data = null
 
-  switch (feild) {
+  switch (field) {
     case 'day':
       data = await getDaydata(date);
       break;
@@ -22,7 +22,7 @@ export default async (store, feild, date) => {
   }
 
   let res = null
-  switch(feild) {
+  switch(field) {
     case 'day':
       res = data.result.data
       res.date = formatChsDate(res.date, 'day')
@@ -37,7 +37,7 @@ export default async (store, feild, date) => {
       res = mapForChsDate(res, 'startday')
   }
   store.commit('setData', {
-    feild, 
+    field, 
     data: res
   })
 }
