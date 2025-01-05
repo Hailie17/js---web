@@ -35,6 +35,7 @@ export default {
       text-align: center;
     }
     &.content {
+      width: 2.5rem;
       display: flex;
       align-items: center;
       font-size: .14rem;

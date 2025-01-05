@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <day-card :data="dayData"></day-card>
+    <day-list :data="dayData"></day-list>
   </div>
 </template>
 
@@ -11,10 +12,11 @@ import {useStore} from 'vuex'
 import {getNowDate} from '@/libs/utils'
 
 import DayCard from '@/components/DayPage/Card.vue'
+import DayList from '@/components/DayPage/List'
 
 export default {
   name: 'DayPage',
-  components: { DayCard },
+  components: { DayCard, DayList },
   setup() {
     const store = useStore(),
           state = store.state
