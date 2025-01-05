@@ -1,7 +1,10 @@
 <template>
   <div class="container">
-    <day-card :data="dayData"></day-card>
-    <day-list :data="dayData"></day-list>
+    <error-tip v-if="errorCode" />
+    <div v-else>
+      <day-card :data="dayData"></day-card>
+      <day-list :data="dayData"></day-list>
+    </div>
   </div>
 </template>
 
@@ -13,10 +16,11 @@ import {getNowDate} from '@/libs/utils'
 
 import DayCard from '@/components/DayPage/Card.vue'
 import DayList from '@/components/DayPage/List'
+import ErrorTip from '@/components/ErrorTip'
 
 export default {
   name: 'DayPage',
-  components: { DayCard, DayList },
+  components: { DayCard, DayList, ErrorTip },
   setup() {
     const store = useStore(),
           state = store.state
@@ -25,7 +29,8 @@ export default {
     })
 
     return {
-      dayData: computed(() => state.dayData)
+      dayData: computed(() => state.dayData),
+      errorCode: computed(() => store.state.errorCode)
     }
   }
 }
