@@ -1,17 +1,30 @@
 <template>
-  <div class="container">month page</div>
+  <div class="container">
+    <error-tip v-if="errorCode" />
+    <div v-else>
+      
+    </div>
+  </div>
 </template>
 
 <script>
 import getDay from '@/services'
-import { onMounted } from 'vue'
+import { onMounted, computed, watch } from 'vue'
+import {useStore} from 'vuex'
+import {getNowDate} from '@/libs/utils'
 
 export default {
   name: 'MonthPage',
   setup() {
+    const store = useStore(),
+          state = store.state
     onMounted(() => {
-      getDay('month', '2020-12')
+      getDay(store, 'month', getNowDate('month'))
     })
+    return {
+      dayData: computed(() => state.dayData),
+      errorCode: computed(() => store.state.errorCode)
+    }
   }
 }
 </script>

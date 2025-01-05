@@ -10,7 +10,7 @@
 
 <script>
 import getDay from '@/services'
-import {onMounted, computed} from 'vue'
+import {onMounted, computed, watch} from 'vue'
 import {useStore} from 'vuex'
 import {getNowDate} from '@/libs/utils'
 
@@ -27,7 +27,12 @@ export default {
     onMounted(()=> {
       getDay(store, 'day', getNowDate('day'))
     })
-
+    // 将错误码置为 0
+    watch(() => {
+      return state.dayData
+    }, () => {
+      store.commit('setErrorCode', 0)
+    })
     return {
       dayData: computed(() => state.dayData),
       errorCode: computed(() => store.state.errorCode)
