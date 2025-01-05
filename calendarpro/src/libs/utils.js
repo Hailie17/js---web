@@ -38,6 +38,24 @@ function mapForChsDate(date, key) {
   })
 }
 
+function getNowDate(field){
+  const date = new Date()
+
+  let year = date.getFullYear(),
+      month = date.getMonth() + 1,
+      day = date.getDate()
+  switch(field) {
+    case 'day':
+      return `${year}-${month}-${day}`
+    case 'month':
+      return `${year}-${month}`
+    case 'year':
+      return `${year}`
+    default: 
+      return `${year}-${month}-${day}`
+  }
+}
+
 export {
-  getIconData, mapForChsDate, formatChsDate
+  getIconData, mapForChsDate, formatChsDate, getNowDate
 }
