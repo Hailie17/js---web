@@ -12,11 +12,12 @@ import getDay from '@/services'
 import { onMounted, computed, watch } from 'vue'
 import {useStore} from 'vuex'
 import {getNowDate} from '@/libs/utils'
+import ErrorTip from '@/components/ErrorTip'
 import CardList from '@/components/MonthPage/List/index.vue'
 
 export default {
   name: 'MonthPage',
-  components: { CardList},
+  components: { CardList, ErrorTip},
   setup() {
     const store = useStore(),
           state = store.state

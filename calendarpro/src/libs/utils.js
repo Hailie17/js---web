@@ -32,11 +32,11 @@ function formatChsDate(date, type) {
   }
 }
 
-function mapForChsDate(date, key) {
-  date.map((item) => {
+function mapForChsDate(date, key) {  
+  date.forEach((item) => {
     item[key] = formatChsDate(item[key])
-    return item
   })
+  return date
 }
 
 function getNowDate(field){

@@ -29,7 +29,7 @@ export default async (store, field, date) => {
       res['year-month'] = formatChsDate(res['year-month'], 'month')
       break;
     case 'month':
-      res = data.result.data.holiday_array
+      res = data.result.data.holiday_array      
       res = mapForChsDate(res, 'festival')
       break;
     case 'year':
