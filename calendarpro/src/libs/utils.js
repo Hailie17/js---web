@@ -57,6 +57,11 @@ function getNowDate(field){
   }
 }
 
+/**
+ * 20200102转为2020-1-2
+ */
+
+// 888
 export {
   getIconData, mapForChsDate, formatChsDate, getNowDate
 }
