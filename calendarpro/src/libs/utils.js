@@ -60,8 +60,21 @@ function getNowDate(field){
 /**
  * 20200102转为2020-1-2
  */
+function formatUserDate(value) {
+  const len = value.length
+  if(len < 4) {
+    return
+  }
 
-// 888
+  if(len === 4) {
+    return value
+  }
+
+  if(len > 4 && len < 6) {
+    return value.substr(0,4)
+  }
+}
+
 export {
   getIconData, mapForChsDate, formatChsDate, getNowDate
 }
