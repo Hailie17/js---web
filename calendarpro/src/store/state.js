@@ -5,5 +5,6 @@ export default {
   errorCode: 0,
   dayData: {},
   monthData: [],
-  yearDta: []
+  yearDta: [],
+  field: 'day', // 储存当前场景
 }
