@@ -73,6 +73,20 @@ function formatUserDate(value) {
   if(len > 4 && len < 6) {
     return value.substr(0,4)
   }
+
+  let _arr = [],
+      pattern
+  if(len >= 6 && len < 8) {
+    pattern = /(\d{4})(\d{2})/ // 正则：分为前面四个数后面两个数两组
+    value = value.substr(0,6).replace(pattern, '$1-$2')  //截取前六位，替换正则，前四位走1，后两位走2
+
+    _arr = Array.from(value).filter((item, index)=> {
+      if(index===5 && item === '0'){
+        return false
+      }
+      return true
+    })
+  }
 }
 
 export {
