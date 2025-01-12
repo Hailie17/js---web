@@ -87,8 +87,19 @@ function formatUserDate(value) {
       return true
     })
   }
+  if(len >= 8) {
+    pattern = /(\d{4})(\d{2})(\d{2})/
+    value = value.substr(0,8).replace(pattern, '$1-$2-$3')
+    _arr = Array.from(value).filter((item, index) => {
+      if((index === 5 || index === 8) && item === '0') {
+        return false
+      }
+      return true
+    })
+  }
+  return _arr.toString().replace(/,/g, '')
 }
 
 export {
-  getIconData, mapForChsDate, formatChsDate, getNowDate
+  getIconData, mapForChsDate, formatChsDate, getNowDate, formatUserDate 
 }
