@@ -6,5 +6,6 @@ export default {
   dayData: {},
   monthData: [],
   yearDta: [],
+  // 222
   field: 'day', // 储存当前场景
 }

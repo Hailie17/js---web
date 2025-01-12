@@ -6,6 +6,8 @@
 
 <script>
 import {ref} from 'vue'
+import { formatUserDate } from '@/libs/utils'
+
 export default {
   name: 'SearchInput',
   props: {
