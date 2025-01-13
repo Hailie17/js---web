@@ -23,7 +23,7 @@ export default {
 
     const searchData = (e) => {
       inputValue.value = e.target.value
-      const field = computed(() => state.field.value)
+      const field = computed(() => state.field).value
       if( inputValue.value.length === props.maxlength ) {
         getData( store, field, formatUserDate(inputValue.value))
       } else if ( inputValue.value === 0 ) { // 搜索词删除后返回原始数据

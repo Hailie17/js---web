@@ -16,7 +16,6 @@ export default async (store, field, date) => {
       data = await getYeardata(date);
       break
   }
-  console.log('data', data);
   
   if(data.error_code !== 0) {
     store.commit('setErrorCode', data.error_code);

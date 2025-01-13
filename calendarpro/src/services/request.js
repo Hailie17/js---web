@@ -1,6 +1,6 @@
 import { axiosPost} from "@/libs/http";
 
-function getDaydata(date){
+function getDaydata(date){  
   return new Promise((resolve, reject) => {
     axiosPost({
       url: '/api/calendar/day',
