@@ -38,7 +38,8 @@ export default {
       store.commit('setHeadTitle', v)
       store.commit('setMaxLength', v)
       store.commit('setPlaceholder', v)
-
+      store.commit('setField', v)
+      store.commit('setErrorCode', 0)
     })
     return computed(() => state).value // {}
     //333
