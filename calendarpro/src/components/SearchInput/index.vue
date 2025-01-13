@@ -5,8 +5,10 @@
 </template>
 
 <script>
-import {ref} from 'vue'
-import { formatUserDate } from '@/libs/utils'
+import {ref, computed} from 'vue'
+import { useStore } from 'vuex'
+import { formatUserDate, getNowDate } from '@/libs/utils'
+import getData from '@/services'
 
 export default {
   name: 'SearchInput',
@@ -14,12 +16,20 @@ export default {
     placeholder: String,
     maxlength: Number
   },
-  setup(){
-    const inputValue = ref('')
+  setup(props){
+    const inputValue = ref(''),
+          store = useStore(),
+          state = store.state
 
     const searchData = (e) => {
-
-    }
+      inputValue.value = e.target.value
+      const field = computed(() => state.field.value)
+      if( inputValue.value.length === props.maxlength ) {
+        getData( store, field, formatUserDate(inputValue.value))
+      } else if ( inputValue.value === 0 ) { // 搜索词删除后返回原始数据
+        getData( store, field, getNowDate(field))
+      }
+    } 
     return {
       inputValue,
       searchData

@@ -1,6 +1,7 @@
 import { formatChsDate, mapForChsDate } from "@/libs/utils";
 import { getDaydata, getMonthdata, getYeardata } from "./request";
 
+/*** 请求和收发数据  */
 export default async (store, field, date) => {
   let data = null
 
@@ -15,7 +16,8 @@ export default async (store, field, date) => {
       data = await getYeardata(date);
       break
   }
-
+  console.log('data', data);
+  
   if(data.error_code !== 0) {
     store.commit('setErrorCode', data.error_code);
     return
